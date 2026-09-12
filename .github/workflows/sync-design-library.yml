@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -28,7 +28,7 @@ jobs:
           rm -rf _drive_download
           mkdir -p _drive_download
           cd _drive_download
-          gdown --folder 'https://drive.google.com/drive/folders/1bfG5feMM9CMpiBbYwP8jnUqy1IDfSN9m?usp=drive_link' --remaining-ok
+          gdown --folder 'https://drive.google.com/drive/folders/1bfG5feMM9CMpiBbYwP8jnUqy1IDfSN9m?usp=drive_link'
 
       - name: Publish HTML files
         shell: bash
