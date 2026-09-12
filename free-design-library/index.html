@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Design Library | MoNagy</title>
+  <meta name="description" content="Free Design Library — a free collection of design resources and references by MoNagy.">
+  <link rel="canonical" href="https://monagyai.github.io/free-design-library/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Design Library | MoNagy">
+  <meta property="og:description" content="Explore free design resources, references and creative materials.">
+  <meta property="og:url" content="https://monagyai.github.io/free-design-library/">
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;width:100%;height:100%;background:#070707;color:#f5f0e6;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body{overflow:hidden}
+    .shell{display:grid;grid-template-rows:auto 1fr;height:100vh}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 18px;background:#0b0b0b;border-bottom:1px solid rgba(217,165,42,.32);box-shadow:0 8px 30px rgba(0,0,0,.22);z-index:5}
+    .identity{display:flex;align-items:center;gap:12px;min-width:0}
+    .mark{width:34px;height:34px;display:grid;place-items:center;border:1px solid #d9a52a;border-radius:50%;color:#d9a52a;font-size:12px;font-weight:800;letter-spacing:.08em}
+    .title{min-width:0}
+    .title strong{display:block;font-size:15px;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .title small{display:block;color:#aaa;font-size:11px;margin-top:2px}
+    .actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid rgba(255,255,255,.18);color:#f5f0e6;padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700;transition:.2s ease;background:#111}
+    .btn:hover{border-color:#d9a52a;color:#d9a52a}
+    .btn.primary{background:#d9a52a;color:#070707;border-color:#d9a52a}
+    .frame-wrap{position:relative;min-height:0;background:#fff}
+    iframe{display:block;width:100%;height:100%;border:0;background:#fff}
+    .fallback{position:absolute;inset:0;display:none;place-items:center;padding:28px;text-align:center;background:#0b0b0b;color:#eee}
+    .fallback a{color:#d9a52a}
+    @media(max-width:700px){
+      .bar{padding:10px 12px}.title small{display:none}.btn{padding:7px 10px;font-size:11px}.actions .secondary{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="bar">
+      <div class="identity">
+        <div class="mark">MN</div>
+        <div class="title">
+          <strong>Free Design Library</strong>
+          <small dir="rtl">مكتبة التصميم المجانية</small>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn secondary" href="https://monagyai.github.io/monagy-studio/">Portfolio | البورتفوليو</a>
+        <a class="btn primary" href="https://designlibrary-22terapremium.netlify.app/" target="_blank" rel="noreferrer">Open Library ↗</a>
+      </div>
+    </header>
+    <main class="frame-wrap">
+      <iframe src="https://designlibrary-22terapremium.netlify.app/" title="Free Design Library" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen"></iframe>
+      <div class="fallback">
+        <div><h1>Free Design Library</h1><p dir="rtl">إذا لم تظهر المكتبة داخل الصفحة، افتحها مباشرة من الرابط التالي.</p><p><a href="https://designlibrary-22terapremium.netlify.app/" target="_blank" rel="noreferrer">Open Free Design Library</a></p></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
